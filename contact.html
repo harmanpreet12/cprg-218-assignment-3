@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shangri La Beach Resort</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Banner -->
+        <section class="contact-banner">
+            <div class="banner-content">
+                <h1>Contact Us</h1>
+                <p>We're here to assist you with any questions or special requests you may have.</p>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>Shangri La Beach Resort</p>
+                        <p>123 Paradise Blvd</p>
+                        <p>Tropical Island, TI 12345</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>Reservations: +1 (555) 123-4567</p>
+                        <p>Front Desk: +1 (555) 765-4321</p>
+                        <p>Concierge: +1 (555) 987-6543</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Reservations: reservations@shangrilaresort.com</p>
+                        <p>Guest Services: services@shangrilaresort.com</p>
+                        <p>General Inquiries: info@shangrilaresort.com</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <h3>Hours</h3>
+                        <p>Front Desk: 24/7</p>
+                        <p>Reservations: 8:00 AM - 8:00 PM</p>
+                        <p>Concierge: 7:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-heading">
+                        <h2>Send Us a Message</h2>
+                        <p>We'll get back to you as soon as possible.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject*</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" selected disabled>Select a subject</option>
+                                    <option value="reservation">Reservation Inquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="special">Special Request</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the <a href="#">privacy policy</a> and consent to having my data processed.</label>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15694.636264043288!2d73.53761672662726!3d4.2034155822781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b3f7f40b50528ff%3A0x78ae88370b61aeaf!2sMaldives!5e0!3m2!1sen!2sus!4v1650321321054!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What is your check-in and check-out time?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Check-in time is at 3:00 PM and check-out time is at 11:00 AM. Early check-in and late check-out can be arranged based on availability for an additional fee.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>How do I get to the resort from the airport?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>We offer complimentary airport transfers for all our guests. Please provide your flight details at least 48 hours prior to arrival, and our staff will be waiting to welcome you at the airport.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Do you accommodate special dietary requirements?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yes, we cater to various dietary requirements including vegetarian, vegan, gluten-free, and allergies. Please inform us of any special dietary needs at the time of booking or contact our guest services team prior to your arrival.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What activities are included in the stay?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Complimentary activities include access to our infinity pool, fitness center, beach volleyball, sunrise yoga, and meditation sessions. Additional activities such as snorkeling, diving, and excursions are available for a fee.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>What is your cancellation policy?</h3>
+                            <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Cancellations made 30 days or more prior to arrival receive a full refund minus a processing fee. Cancellations made 15-29 days before arrival receive a 50% refund. Cancellations made less than 15 days before arrival are non-refundable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/include.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+/* Activities & Excursions Page Specific Styles */
+
+/* Banner Section */
+.activities-banner {
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/activities/activities-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px; /* To account for fixed header */
+  color: white;
+  text-align: center;
+}
+
+.banner-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.activities-banner h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.activities-banner p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Headings */
+section h2 {
+  color: #1a3b5d;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #68b0ab;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* On-Site Activities Section */
+.onsite-activities {
+  padding: 5rem 0;
+}
+
+.activity-category {
+  margin-bottom: 4rem;
+}
+
+.activity-category h3 {
+  color: #1a3b5d;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.activity-item {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  padding: 1.5rem;
+}
+
+.activity-item:hover {
+  transform: translateY(-5px);
+}
+
+.activity-icon {
+  flex: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #68b0ab;
+}
+
+.activity-info {
+  flex: 1;
+  padding-left: 1.5rem;
+}
+
+.activity-info h4 {
+  color: #1a3b5d;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.activity-info p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.activity-details {
+  margin-top: 0.5rem;
+}
+
+.activity-tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.activity-tag.complimentary {
+  background-color: #e3f6f5;
+  color: #2e8b86;
+}
+
+.sub-activities {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sub-activities li {
+  margin-bottom: 0.8rem;
+  color: #666;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.sub-activities li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #68b0ab;
+}
+
+/* Local Excursions Section */
+.local-excursions {
+  padding: 5rem 0;
+  background-color: #f9f9f9;
+}
+
+.excursion-category {
+  margin-bottom: 4rem;
+}
+
+.excursion-category h3 {
+  color: #1a3b5d;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.excursion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.excursion-item {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  padding: 1.5rem;
+}
+
+.excursion-item:hover {
+  transform: translateY(-5px);
+}
+
+.excursion-icon {
+  flex: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #1a3b5d;
+}
+
+.excursion-info {
+  flex: 1;
+  padding-left: 1.5rem;
+}
+
+.excursion-info h4 {
+  color: #1a3b5d;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.excursion-info p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.excursion-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.excursion-duration, .excursion-fee {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.excursion-fee {
+  background-color: #f5e3e6;
+  color: #c62828;
+}
+
+.btn-book-excursion {
+  display: inline-block;
+  background-color: #1a3b5d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-book-excursion:hover {
+  background-color: #68b0ab;
+}
+
+/* Booking Information Section */
+.booking-info {
+  padding: 5rem 0;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  color: #68b0ab;
+  margin-bottom: 1.5rem;
+}
+
+.info-card h3 {
+  color: #1a3b5d;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Call to Action */
+.activities-cta {
+  padding: 5rem 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/activities/activities-cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.activities-cta h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.activities-cta h2::after {
+  background-color: white;
+}
+
+.activities-cta p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #68b0ab;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4a7c78;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .activities-banner {
+    height: 350px;
+  }
+  
+  .activities-banner h1 {
+    font-size: 2.5rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+  }
+  
+  .activity-item,
+  .excursion-item {
+    flex-direction: column;
+  }
+  
+  .activity-icon,
+  .excursion-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .activity-info,
+  .excursion-info {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .activities-banner h1 {
+    font-size: 2rem;
+  }
+  
+  .activity-category h3,
+  .excursion-category h3 {
+    font-size: 1.5rem;
+  }
+}
