@@ -42,6 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="logo-container">
                         <img src="images/logo.svg" alt="Shangri La Resort Logo" class="logo">
                     </div>
+                        <div class="weather-container">
+                    <div id="weather-display">
+                        <span id="temp">--°C</span>
+                   
+                        <span id="location">Cancun, Mexico</span>
+                     </div>
+                     </div>
                     <nav>
                         <ul class="nav-links">
                             <li><a href="index.html">Home</a></li>
